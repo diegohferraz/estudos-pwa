@@ -68,3 +68,13 @@ self.addEventListener('fetch', function(event) {
       })
   );
 });
+
+//Network first with cache fallback
+// self.addEventListener('fetch', function(event) {
+//   event.respondWith(
+//     fetch(event.request)
+//       .catch(function(err) {
+//         return caches.match(event.request)
+//       })
+//   );
+// });
