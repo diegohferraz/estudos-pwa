@@ -89,7 +89,7 @@ fetch(URL)
   });
 
 if ('caches' in window) {
-  caches.matches(URL)
+  caches.match(URL)
     .then(function(response) {
       if(response) {
         return response.json();
